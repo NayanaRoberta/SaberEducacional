@@ -4,11 +4,11 @@ Sistema web para gestão escolar - Saber Educacional, focado inicialmente no cad
 # Saber Educacional
 
 
-## �� Visão Geral
+## Visão Geral
 
 "O Saber Educacional" é um sistema web desenvolvido para otimizar a gestão administrativa de instituições de ensino. Inspirado na premissa de centralizar e facilitar o acesso à informação, este projeto foca inicialmente no cadastro e gerenciamento eficiente de alunos e funcionários, com o objetivo de reduzir a burocracia e melhorar a organização interna das escolas.
 
-## 🌟 Funcionalidades (MVP - Produto Mínimo Viável)
+## Funcionalidades (MVP)
 
 -   **Cadastro de Alunos:** Permite registrar e consultar informações detalhadas dos estudantes, incluindo dados pessoais, de contato e associação a turmas.
 -   **Cadastro de Funcionários:** Habilita o registro de professores e demais colaboradores, com suas respectivas funções e permissões de acesso ao sistema.
