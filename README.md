@@ -1,9 +1,6 @@
 # SaberEducacional
 Sistema web para gestão escolar - Saber Educacional, focado inicialmente no cadastro e gerenciamento de alunos e funcionários
 
-# Saber Educacional
-
-
 ## Visão Geral
 
 "O Saber Educacional" é um sistema web desenvolvido para otimizar a gestão administrativa de instituições de ensino. Inspirado na premissa de centralizar e facilitar o acesso à informação, este projeto foca inicialmente no cadastro e gerenciamento eficiente de alunos e funcionários, com o objetivo de reduzir a burocracia e melhorar a organização interna das escolas.
