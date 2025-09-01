@@ -2,42 +2,55 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Saber Educacional - Cadastro de Pessoas</title>
+  <title> Saber Educacional </title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1> Cadastro </h1>
+  <div class="sidebar">
+    <h2>Escola</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Alunos</li>
+      <li>Professores</li>
+      <li>Configurações</li>
+    </ul>
+  </div>
 
-    
-    <form id="pessoa-form" class="card">
-      <select id="tipo" required>
-        <option value="">Selecione o tipo</option>
-        <option value="Aluno">Aluno</option>
-        <option value="Funcionário">Funcionário</option>
-      </select>
-      <input type="text" id="nome" placeholder="Nome" required>
+  <main>
+    <h1>Cadastro de Pessoas</h1>
+
+    <form id="cadastroForm">
+      <input type="text" id="nome" placeholder="Nome completo" required>
       <input type="email" id="email" placeholder="E-mail" required>
-      <input type="tel" id="telefone" placeholder="Telefone" required>
-      <button type="submit">Cadastrar</button>
+      <input type="text" id="telefone" placeholder="Telefone" required>
+
+      <select id="tipo" required>
+        <option value="">Selecione...</option>
+        <option value="Aluno">Aluno</option>
+        <option value="Professor">Professor</option>
+      </select>
+
+      <button type="submit">Salvar</button>
     </form>
 
-
-    <h2>Pessoas</h2>
-    <table class="card">
+    <h2>Lista de Alunos e Professores</h2>
+    <table id="contatosTable">
       <thead>
         <tr>
-          <th>Tipo</th>
           <th>Nome</th>
-          <th>E-mail</th>
+          <th>Email</th>
           <th>Telefone</th>
+          <th>Tipo</th>
           <th>Ações</th>
         </tr>
       </thead>
-      <tbody id="lista-pessoas"></tbody>
+      <tbody>
+      </tbody>
     </table>
-  </div>
+  </main>
 
-  <script src="script.js"></script>
+  <script src="js/contato.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
+
