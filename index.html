@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title> Saber Educacional </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Cadastrar Clientes </h1>
+
+    <form id="cliente-form" class="card">
+      <input type="text" id="nome" placeholder="Nome do cliente" required>
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="tel" id="telefone" placeholder="Telefone" required>
+      <button type="submit">Cadastrar Cliente</button>
+    </form>
+
+    <h2>Lista de Clientes</h2>
+    <table class="card">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista-clientes"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
