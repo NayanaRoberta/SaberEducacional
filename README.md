@@ -9,7 +9,7 @@ Sistema web para gestão escolar - Saber Educacional, focado inicialmente no cad
 
 -   **Cadastro de Alunos:** Permite registrar e consultar informações detalhadas dos estudantes, incluindo dados pessoais, de contato e associação a turmas.
 -   **Cadastro de Funcionários:** Habilita o registro de professores e demais colaboradores, com suas respectivas funções e permissões de acesso ao sistema.
--   
+  
 ## Objetivos do Projeto
 
 -   Centralizar as informações de alunos e funcionários em uma plataforma única.
