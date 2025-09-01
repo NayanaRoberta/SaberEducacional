@@ -1,9 +1,16 @@
 
-class Cliente {
-  constructor(nome, email, telefone) {
+class Pessoa {
+  constructor(tipo, nome, email, telefone) {
+    this.setTipo(tipo);
     this.setNome(nome);
     this.setEmail(email);
     this.setTelefone(telefone);
+  }
+
+  getTipo() { return this.tipo; }
+  setTipo(tipo) {
+    if (!["Aluno", "Funcionário"].includes(tipo)) throw new Error("Tipo inválido");
+    this.tipo = tipo;
   }
 
   getNome() { return this.nome; }
@@ -26,53 +33,55 @@ class Cliente {
 }
 
 
-function salvarClientes(clientes) {
-  localStorage.setItem("clientes", JSON.stringify(clientes));
+function salvarPessoas(pessoas) {
+  localStorage.setItem("pessoas", JSON.stringify(pessoas));
 }
 
-function carregarClientes() {
-  return JSON.parse(localStorage.getItem("clientes")) || [];
+function carregarPessoas() {
+  return JSON.parse(localStorage.getItem("pessoas")) || [];
 }
 
 
-function renderizarClientes() {
-  const lista = document.getElementById("lista-clientes");
+function renderizarPessoas() {
+  const lista = document.getElementById("lista-pessoas");
   lista.innerHTML = "";
-  clientes.forEach((c, index) => {
+  pessoas.forEach((p, index) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td>${c.nome}</td>
-      <td>${c.email}</td>
-      <td>${c.telefone}</td>
-      <td><button class="remover" onclick="removerCliente(${index})">Remover</button></td>
+      <td>${p.tipo}</td>
+      <td>${p.nome}</td>
+      <td>${p.email}</td>
+      <td>${p.telefone}</td>
+      <td><button class="remover" onclick="removerPessoa(${index})">Remover</button></td>
     `;
     lista.appendChild(tr);
   });
 }
 
-function removerCliente(index) {
-  clientes.splice(index, 1);
-  salvarClientes(clientes);
-  renderizarClientes();
+function removerPessoa(index) {
+  pessoas.splice(index, 1);
+  salvarPessoas(pessoas);
+  renderizarPessoas();
 }
 
 
-const form = document.getElementById("cliente-form");
-let clientes = carregarClientes();
+const form = document.getElementById("pessoa-form");
+let pessoas = carregarPessoas();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   try {
+    const tipo = document.getElementById("tipo").value;
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
     const telefone = document.getElementById("telefone").value;
 
-    const cliente = new Cliente(nome, email, telefone);
-    clientes.push(cliente);
+    const pessoa = new Pessoa(tipo, nome, email, telefone);
+    pessoas.push(pessoa);
 
-    salvarClientes(clientes);
-    renderizarClientes();
+    salvarPessoas(pessoas);
+    renderizarPessoas();
     form.reset();
   } catch (err) {
     alert(err.message);
@@ -80,4 +89,4 @@ form.addEventListener("submit", (e) => {
 });
 
 
-renderizarClientes();
+renderizarPessoas();

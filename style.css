@@ -35,11 +35,18 @@ h2 {
 }
 
 
-form input {
+form select, form input {
   padding: 10px;
   margin: 5px;
   border: 1px solid #ccc;
   border-radius: 6px;
+}
+
+form select {
+  width: calc(30% - 12px);
+}
+
+form input {
   width: calc(30% - 12px);
 }
 
@@ -75,7 +82,6 @@ td {
   border-top: 1px solid #ddd;
 }
 
-
 button.remover {
   background: #ff4d4d;
   color: white;
@@ -88,4 +94,3 @@ button.remover {
 button.remover:hover {
   background: #e63939;
 }
-

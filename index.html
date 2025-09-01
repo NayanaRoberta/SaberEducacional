@@ -2,31 +2,39 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title> Saber Educacional </title>
+  <title>Saber Educacional - Cadastro de Pessoas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1> Cadastrar Clientes </h1>
+    <h1> Cadastro </h1>
 
-    <form id="cliente-form" class="card">
-      <input type="text" id="nome" placeholder="Nome do cliente" required>
+    
+    <form id="pessoa-form" class="card">
+      <select id="tipo" required>
+        <option value="">Selecione o tipo</option>
+        <option value="Aluno">Aluno</option>
+        <option value="Funcionário">Funcionário</option>
+      </select>
+      <input type="text" id="nome" placeholder="Nome" required>
       <input type="email" id="email" placeholder="E-mail" required>
       <input type="tel" id="telefone" placeholder="Telefone" required>
-      <button type="submit">Cadastrar Cliente</button>
+      <button type="submit">Cadastrar</button>
     </form>
 
-    <h2>Lista de Clientes</h2>
+    <!-- Lista -->
+    <h2>Registros</h2>
     <table class="card">
       <thead>
         <tr>
+          <th>Tipo</th>
           <th>Nome</th>
           <th>E-mail</th>
           <th>Telefone</th>
           <th>Ações</th>
         </tr>
       </thead>
-      <tbody id="lista-clientes"></tbody>
+      <tbody id="lista-pessoas"></tbody>
     </table>
   </div>
 
