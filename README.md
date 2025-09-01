@@ -9,30 +9,17 @@ Sistema web para gestão escolar - Saber Educacional, focado inicialmente no cad
 
 -   **Cadastro de Alunos:** Permite registrar e consultar informações detalhadas dos estudantes, incluindo dados pessoais, de contato e associação a turmas.
 -   **Cadastro de Funcionários:** Habilita o registro de professores e demais colaboradores, com suas respectivas funções e permissões de acesso ao sistema.
--   **Gerenciamento de Turmas:** Criação e organização de turmas, possibilitando a associação de alunos e professores.
--   **Autenticação de Usuários:** Sistema de login seguro para administradores e funcionários, com controle de acesso baseado em papéis.
-
+  
 ## Objetivos do Projeto
 
 -   Centralizar as informações de alunos e funcionários em uma plataforma única.
 -   Simplificar e agilizar os processos de registro e consulta de dados.
--   Prover uma base sólida para futuras expansões do sistema (ex: gestão de notas, comunicação, financeiro).
--   Promover a transparência e a eficiência na administração escolar.
 
-## Tecnologias Utilizadas
-
--   **Back-end:** [Sugira a tecnologia que vocês escolherem, ex: Python (Django), Node.js (Express)]
--   **Front-end:** [Sugira a tecnologia que vocês escolherem, ex: React, Vue.js, Angular]
--   **Banco de Dados:** [Sugira a tecnologia que vocês escolherem, ex: PostgreSQL, MySQL]
--   **Controle de Versão:** Git e GitHub
-
-## o Projeto 
 
   
 ## Status do Projeto
 
 -   **Fase:** Desenvolvimento do MVP (Cadastro de Alunos e Funcionários)
--   **Próximos Passos:** [Ex: Implementação da autenticação de usuários, testes de integração.]
 
 ## Equipe
 
